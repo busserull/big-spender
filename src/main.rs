@@ -1,142 +1,192 @@
-/*
-#[derive(Clone, Copy, Debug)]
-enum Currency {
-    NOK,
-}
+use std::fmt;
 
 #[derive(Clone, Copy, Debug)]
-struct Worth {
-    currency: Currency,
-    major: i32,
-    minor: i32,
-}
-*/
-
-type Worth = f64;
-
-#[derive(Clone, Copy, Debug)]
-enum ValueKind {
-    Monetary,
-    Derived,
+struct Transaction {
+    participant_index: usize,
+    amount_minor: i64,
 }
 
-#[derive(Clone, Debug)]
-struct Value {
-    frozen: bool,
-    kind: ValueKind,
-    what: String,
-    worth: Worth,
-}
-
-impl Value {
-    fn monetary(what: &str, worth: Worth) -> Self {
+impl Transaction {
+    fn new(participant_index: usize, amount: f64) -> Self {
         Self {
-            frozen: false,
-            kind: ValueKind::Monetary,
-            what: String::from(what),
-            worth,
+            participant_index,
+            amount_minor: (amount * 100.0) as i64,
         }
     }
-
-    fn derived(what: &str, worth: Worth) -> Self {
-        Self {
-            frozen: false,
-            kind: ValueKind::Derived,
-            what: String::from(what),
-            worth,
-        }
-    }
-
-    fn freeze(&mut self) {
-        self.frozen = true;
-    }
 }
 
-impl<'a> std::iter::Sum<&'a Value> for Worth {
-    fn sum<I: Iterator<Item = &'a Value>>(iter: I) -> Self {
-        iter.into_iter().fold(0.0, |acc, v| acc + v.worth)
-    }
-}
-
-struct Group(Vec<(String, Vec<Value>)>);
-
-impl Group {
-    fn new(participants: &[&str]) -> Self {
-        Self(
-            participants
-                .into_iter()
-                .map(|name| (name.to_string(), Vec::new()))
-                .collect(),
+impl fmt::Display for Transaction {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        write!(
+            f,
+            "{}.{:02}",
+            self.amount_minor / 100,
+            self.amount_minor % 100
         )
     }
+}
 
-    fn transfer(&mut self, from: usize, to: usize, what: &str, worth: Worth) {
-        self.0[from].1.push(Value::monetary(what, -worth));
-        self.0[to].1.push(Value::monetary(what, worth));
-    }
+struct ExpenseReport {
+    participants: Vec<String>,
+    exchange_rates: Vec<(String, f64)>,
+    base_currency: String,
+    transactions: Vec<Transaction>,
+    history: Vec<String>,
+}
 
-    fn expense(&mut self, by: usize, share: &[u32], what: &str, worth: Worth) {
-        assert_eq!(
-            share.len(),
-            self.0.len(),
-            "Share not specified for all participants"
-        );
+impl ExpenseReport {
+    fn new(participants: &[&str], base_currency: &str, rates: &[(&str, f64)]) -> Self {
+        let participants = participants
+            .into_iter()
+            .map(|name| name.to_string())
+            .collect();
 
-        self.0[by].1.push(Value::monetary(what, -worth));
+        let mut exchange_rates = vec![(String::from(base_currency), 1.00)];
 
-        let share_den: u32 = share.iter().sum();
+        for (currency, relation_to_base) in rates {
+            exchange_rates.push((currency.to_string(), *relation_to_base));
+        }
 
-        for (i, share_num) in share.iter().enumerate().filter(|(_, n)| **n != 0) {
-            let fraction = *share_num as Worth / share_den as Worth;
-
-            self.0[i].1.push(Value::derived(what, worth * fraction));
+        Self {
+            participants,
+            exchange_rates,
+            base_currency: String::from(base_currency),
+            transactions: Vec::new(),
+            history: Vec::new(),
         }
     }
 
-    fn nameof(&self, participant_index: usize) -> String {
-        self.0[participant_index].0.clone()
+    fn get_exchange_rate(&self, currency: &str) -> f64 {
+        self.exchange_rates
+            .iter()
+            .find(|(face, _)| face == currency)
+            .map(|(_, scale)| *scale)
+            .expect(&format!(
+                "Currency '{}' not defined in exchange rates",
+                currency
+            ))
     }
 
-    fn balance(&self) -> Vec<(String, String, Worth)> {
-        let mut balances: Vec<Worth> = self
-            .0
-            .iter()
-            .map(|(_, transactions)| transactions.iter().sum())
-            .collect();
+    fn base_currency_text(&self, amount: f64, currency: &str) -> String {
+        if currency != self.base_currency {
+            let rate = self.get_exchange_rate(currency);
+            let trans_dummy = Transaction::new(usize::MAX, amount.abs() * rate);
 
-        let mut balance_transactions = Vec::new();
+            format!(" ({} {})", trans_dummy, self.base_currency)
+        } else {
+            String::new()
+        }
+    }
+
+    fn transfer(&mut self, from: usize, to: usize, what: &str, amount: f64, currency: &str) {
+        let rate = self.get_exchange_rate(currency);
+
+        let trans_out = Transaction::new(from, -amount * rate);
+        let trans_in = Transaction::new(to, amount * rate);
+
+        self.history.push(format!(
+            "{} gave {:.02} {}{} to {} for '{}'.",
+            self.participants[from],
+            amount,
+            currency,
+            self.base_currency_text(amount, currency),
+            self.participants[to],
+            what
+        ));
+
+        self.transactions.push(trans_out);
+        self.transactions.push(trans_in);
+    }
+
+    fn expense(&mut self, by: usize, split: &[u32], what: &str, amount: f64, currency: &str) {
+        assert_eq!(
+            split.len(),
+            self.participants.len(),
+            "Split is not specified for all participants"
+        );
+
+        let rate = self.get_exchange_rate(currency);
+
+        let trans_out = Transaction::new(by, -amount * rate);
+
+        let mut entry = Vec::new();
+
+        entry.push(format!(
+            "{} paid {:.02} {}{} for '{}', which is split:",
+            self.participants[by],
+            amount,
+            currency,
+            self.base_currency_text(amount, currency),
+            what
+        ));
+
+        self.transactions.push(trans_out);
+
+        let split_den: u32 = split.iter().sum();
+
+        for (i, split_num) in split.iter().enumerate().filter(|(_, n)| **n != 0) {
+            let share = *split_num as f64 / split_den as f64;
+
+            let trans_in = Transaction::new(i, amount * share * rate);
+
+            entry.push(format!(
+                "    {} {}/{} ({} {})",
+                self.participants[i], split_num, split_den, trans_in, self.base_currency
+            ));
+
+            self.transactions.push(trans_in);
+        }
+
+        self.history.push(entry.join("\n"));
+    }
+
+    fn summarize(&self) -> &[String] {
+        &self.history
+    }
+
+    fn balance(&self) -> Vec<(String, String, f64)> {
+        let mut balances: Vec<i64> = vec![0; self.participants.len()];
+
+        for transaction in self.transactions.iter() {
+            balances[transaction.participant_index] += transaction.amount_minor;
+        }
+
+        let mut to_be_done = Vec::new();
 
         for i in 0..balances.len() - 1 {
             let mut j = i;
 
-            while balances[i].abs() > 0.01 {
+            while balances[i] != 0 {
                 j += 1;
 
-                if let Some(transfer) = max_balancing_amount(balances[i], balances[j]) {
-                    balances[i] -= transfer;
-                    balances[j] += transfer;
+                let max_balacing_amount = ((balances[i] * balances[j]).signum() < 0)
+                    .then_some(balances[i].signum() * balances[i].abs().min(balances[j].abs()));
 
-                    let (from, to, amount) = if transfer > 0.0 {
-                        (self.nameof(i), self.nameof(j), transfer)
+                if let Some(amount) = max_balacing_amount {
+                    balances[i] -= amount;
+                    balances[j] += amount;
+
+                    let (from, to) = if amount > 0 {
+                        (self.participants[i].clone(), self.participants[j].clone())
                     } else {
-                        (self.nameof(j), self.nameof(i), -transfer)
+                        (self.participants[j].clone(), self.participants[i].clone())
                     };
 
-                    balance_transactions.push((from, to, amount));
+                    to_be_done.push((from, to, (amount.abs() as f64) / 100.0));
                 }
             }
         }
 
-        balance_transactions
+        to_be_done
     }
 }
 
-fn max_balancing_amount(a: Worth, b: Worth) -> Option<Worth> {
-    ((a * b).signum() < 0.0).then_some(a.signum() * a.abs().min(b.abs()))
-}
-
 fn main() {
-    let mut group = Group::new(&["Alice", "Bob", "Charlie", "Deidre", "DG"]);
+    let mut trip = ExpenseReport::new(
+        &["Alice", "Bob", "Charlie", "Deidre", "DG"],
+        "nok",
+        &[("eur", 11.8375)],
+    );
 
     let alice = 0;
     let bob = 1;
@@ -146,21 +196,28 @@ fn main() {
 
     /* Deposits */
 
-    group.transfer(alice, dg, "Deposit", 20.0);
-    group.transfer(bob, dg, "Deposit", 20.0);
-    group.transfer(deidre, dg, "Deposit", 8.0);
+    trip.transfer(alice, dg, "deposit", 20.0, "nok");
+    trip.transfer(bob, dg, "deposit", 20.0, "nok");
+    trip.transfer(deidre, dg, "deposit", 8.0, "eur");
 
     /* DG pays for stay */
 
-    group.expense(dg, &[1, 1, 1, 1, 0], "Stay", 52.0);
+    trip.expense(dg, &[1, 1, 1, 1, 0], "stay", 52.0, "nok");
 
     /* Charlie pays for a lot of food, but alice doesn't eat any of it */
 
-    group.expense(charlie, &[0, 1, 1, 1, 0], "Food", 120.0);
+    trip.expense(charlie, &[0, 1, 1, 1, 0], "food", 120.0, "nok");
 
     /* Do balancing */
 
-    for (from, to, amount) in group.balance() {
-        println!("{} pays {} {} kr", from, to, amount);
+    for entry in trip.summarize() {
+        println!();
+        println!("{}", entry);
+    }
+
+    println!();
+
+    for (from, to, amount) in trip.balance() {
+        println!("{} pays {} {:.02} nok", from, to, amount);
     }
 }
