@@ -1,3 +1,4 @@
+// mod expense_report;
 use std::fmt;
 
 #[derive(Clone, Copy, Debug)]
@@ -10,7 +11,7 @@ impl Transaction {
     fn new(participant_index: usize, amount: f64) -> Self {
         Self {
             participant_index,
-            amount_minor: (amount * 100.0) as i64,
+            amount_minor: (amount * 100.0).round() as i64,
         }
     }
 }
@@ -154,11 +155,9 @@ impl ExpenseReport {
         let mut to_be_done = Vec::new();
 
         for i in 0..balances.len() - 1 {
-            let mut j = i;
+            let mut j = i + 1;
 
-            while balances[i] != 0 {
-                j += 1;
-
+            while balances[i] != 0 && j < balances.len() {
                 let max_balacing_amount = ((balances[i] * balances[j]).signum() < 0)
                     .then_some(balances[i].signum() * balances[i].abs().min(balances[j].abs()));
 
@@ -174,6 +173,8 @@ impl ExpenseReport {
 
                     to_be_done.push((from, to, (amount.abs() as f64) / 100.0));
                 }
+
+                j += 1;
             }
         }
 
@@ -185,7 +186,7 @@ fn main() {
     let mut trip = ExpenseReport::new(
         &["Alice", "Bob", "Charlie", "Deidre", "DG"],
         "nok",
-        &[("eur", 11.8375)],
+        &[("eur", 1.0 / 11.8375)],
     );
 
     let alice = 0;
