@@ -1,0 +1,61 @@
+{
+  "currency": "nok",
+  "exchange_rates": {
+    "eur": 11.8375
+  },
+  "participants": [
+    "Alice",
+    "Bob",
+    "Charlie",
+    "Deidre",
+    "DG"
+  ],
+  "transfers": [
+    {
+      "from": "Alice",
+      "to": "DG",
+      "amount": 20.0,
+      "currency": "nok",
+      "what": "deposit"
+    },
+    {
+      "from": "Bob",
+      "to": "DG",
+      "amount": 20.0,
+      "currency": "nok",
+      "what": "deposit"
+    },
+    {
+      "from": "Deidre",
+      "to": "DG",
+      "amount": 8.0,
+      "currency": "eur",
+      "what": "deposit"
+    }
+  ],
+  "expenses": [
+    {
+      "by": "DG",
+      "amount": 52.0,
+      "currency": "nok",
+      "what": "stay",
+      "split": {
+        "Alice": 1,
+        "Bob": 1,
+        "Charlie": 1,
+        "Deidre": 1
+      }
+    },
+    {
+      "by": "Charlie",
+      "amount": 120.0,
+      "currency": "nok",
+      "what": "food",
+      "split": {
+        "Bob": 1,
+        "Charlie": 1,
+        "Deidre": 1
+      }
+    }
+  ]
+}
