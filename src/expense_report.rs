@@ -1,36 +1,122 @@
+use serde::Deserialize;
+
+use std::collections::HashMap;
 use std::fmt;
 
 pub struct ExpenseReport {
     participants: Vec<String>,
-    exchange_rates: Vec<(String, f64)>,
+    participant_indices: HashMap<String, usize>,
+    exchange_rates: HashMap<String, f64>,
     base_currency: String,
     transactions: Vec<Transaction>,
     history: Vec<String>,
 }
 
 impl ExpenseReport {
-    pub fn new(participants: &[&str], base_currency: &str, rates: &[(&str, f64)]) -> Self {
-        let participants = participants
-            .into_iter()
-            .map(|name| name.to_string())
+    pub fn new(json: &str) -> Self {
+        let input: JsonInput = serde_json::from_str(json).unwrap();
+
+        let participant_indices = input
+            .participants
+            .iter()
+            .enumerate()
+            .map(|(id, name)| (name.clone(), id))
             .collect();
 
-        let mut exchange_rates = vec![(String::from(base_currency), 1.00)];
+        let mut exchange_rates: HashMap<String, f64> = HashMap::new();
 
-        for (currency, relation_to_base) in rates {
-            exchange_rates.push((currency.to_string(), *relation_to_base));
+        exchange_rates.insert(input.currency.clone(), 1.00);
+
+        for (currency, relation_to_base) in input.exchange_rates {
+            exchange_rates.insert(currency, relation_to_base);
         }
 
-        Self {
-            participants,
+        let mut report = Self {
+            participants: input.participants,
+            participant_indices,
             exchange_rates,
-            base_currency: String::from(base_currency),
+            base_currency: input.currency,
             transactions: Vec::new(),
             history: Vec::new(),
+        };
+
+        for transfer in input.transfers.into_iter() {
+            report.transfer(
+                &transfer.from,
+                &transfer.to,
+                &transfer.what,
+                transfer.amount,
+                &transfer.currency,
+            );
         }
+
+        for expense in input.expenses.into_iter() {
+            report.expense(
+                &expense.by,
+                &expense.split,
+                &expense.what,
+                expense.amount,
+                &expense.currency,
+            );
+        }
+
+        report
     }
 
-    pub fn transfer(&mut self, from: &str, to: &str, what: &str, amount: f64, currency: &str) {
+    pub fn summarize(&self) -> &[String] {
+        &self.history
+    }
+
+    pub fn balance(&self) -> (Vec<(String, String, f64)>, Vec<(String, f64)>) {
+        let mut balances: Vec<i64> = vec![0; self.participants.len()];
+
+        for transaction in self.transactions.iter() {
+            balances[transaction.participant_index] += transaction.amount_minor;
+        }
+
+        let mut to_be_done = Vec::new();
+
+        for i in 0..balances.len() - 1 {
+            let mut j = i + 1;
+
+            while balances[i] != 0 && j < balances.len() {
+                let max_balacing_amount = ((balances[i] * balances[j]).signum() < 0)
+                    .then_some(balances[i].signum() * balances[i].abs().min(balances[j].abs()));
+
+                if let Some(amount) = max_balacing_amount {
+                    balances[i] -= amount;
+                    balances[j] += amount;
+
+                    let (from, to) = if amount > 0 {
+                        (self.participants[i].clone(), self.participants[j].clone())
+                    } else {
+                        (self.participants[j].clone(), self.participants[i].clone())
+                    };
+
+                    to_be_done.push((from, to, (amount.abs() as f64) / 100.0));
+                }
+
+                j += 1;
+            }
+        }
+
+        let residuals = balances
+            .into_iter()
+            .enumerate()
+            .filter_map(|(id, amount_minor)| {
+                (amount_minor != 0)
+                    .then_some((self.participants[id].clone(), (amount_minor as f64) / 100.0))
+            })
+            .collect();
+
+        (to_be_done, residuals)
+    }
+
+    pub fn base_currency(&self) -> &str {
+        &self.base_currency
+    }
+
+    fn transfer(&mut self, from: &str, to: &str, what: &str, amount: f64, currency: &str) {
         let rate = self.get_exchange_rate(currency);
 
         let from = self.get_participant_index(from);
@@ -53,10 +139,10 @@ impl ExpenseReport {
         self.transactions.push(trans_in);
     }
 
-    pub fn expense(
+    fn expense(
         &mut self,
         by: &str,
-        participant_split: &[(&str, u32)],
+        participant_split: &HashMap<String, u32>,
         what: &str,
         amount: f64,
         currency: &str,
@@ -106,62 +192,24 @@ impl ExpenseReport {
         self.history.push(entry.join("\n"));
     }
 
-    pub fn summarize(&self) -> &[String] {
-        &self.history
-    }
-
-    pub fn balance(&self) -> Vec<(String, String, f64)> {
-        let mut balances: Vec<i64> = vec![0; self.participants.len()];
-
-        for transaction in self.transactions.iter() {
-            balances[transaction.participant_index] += transaction.amount_minor;
-        }
-
-        let mut to_be_done = Vec::new();
-
-        for i in 0..balances.len() - 1 {
-            let mut j = i + 1;
-
-            while balances[i] != 0 && j < balances.len() {
-                let max_balacing_amount = ((balances[i] * balances[j]).signum() < 0)
-                    .then_some(balances[i].signum() * balances[i].abs().min(balances[j].abs()));
-
-                if let Some(amount) = max_balacing_amount {
-                    balances[i] -= amount;
-                    balances[j] += amount;
-
-                    let (from, to) = if amount > 0 {
-                        (self.participants[i].clone(), self.participants[j].clone())
-                    } else {
-                        (self.participants[j].clone(), self.participants[i].clone())
-                    };
-
-                    to_be_done.push((from, to, (amount.abs() as f64) / 100.0));
-                }
-
-                j += 1;
-            }
-        }
-
-        to_be_done
-    }
-
     fn get_participant_index(&self, participant: &str) -> usize {
-        self.participants
-            .iter()
-            .position(|name| name == participant)
-            .expect(&format!("Participant '{}' is unknown", participant))
+        self.participant_indices
+            .get(participant)
+            .expect(&format!(
+                "Participant '{}' is in participant list",
+                participant
+            ))
+            .clone()
     }
 
     fn get_exchange_rate(&self, currency: &str) -> f64 {
         self.exchange_rates
-            .iter()
-            .find(|(face, _)| face == currency)
-            .map(|(_, scale)| *scale)
+            .get(currency)
             .expect(&format!(
                 "Currency '{}' not defined in exchange rates",
                 currency
             ))
+            .clone()
     }
 
     fn base_currency_text(&self, amount: f64, currency: &str) -> String {
@@ -200,4 +248,31 @@ impl fmt::Display for Transaction {
             self.amount_minor % 100
         )
     }
+}
+
+#[derive(Deserialize, Debug)]
+struct JsonInput {
+    currency: String,
+    exchange_rates: HashMap<String, f64>,
+    participants: Vec<String>,
+    transfers: Vec<JsonTransfer>,
+    expenses: Vec<JsonExpense>,
+}
+
+#[derive(Deserialize, Debug)]
+struct JsonTransfer {
+    from: String,
+    to: String,
+    amount: f64,
+    currency: String,
+    what: String,
+}
+
+#[derive(Deserialize, Debug)]
+struct JsonExpense {
+    by: String,
+    amount: f64,
+    currency: String,
+    what: String,
+    split: HashMap<String, u32>,
 }
