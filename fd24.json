@@ -5,7 +5,6 @@
   },
   "participants": [
     "DG",
-    "Henri Pitkänen",
     "Maria Eide",
     "Ole Helgedagsrud",
     "Jonas Brunsvik",
@@ -26,22 +25,10 @@
     "Pau Pardo",
     "Terese Borøy",
     "Thea Skylstad",
-    "Kupla",
-    "Helga Rissanen",
-    "Eero Pollock",
-    "Lasse Wittke",
-    "Paul Närhi",
-    "Ida Rouhiainen",
-    "Tommi Pesu",
-    "Heikki Pulkkinen",
-    "Peter Kling",
-    "Walter Rehn",
-    "Elli Törnqvist",
-    "Emmi Kosomaa"
+    "Kupla"
   ],
   "in_care_of": {
     "Kupla": "DG",
-    "Henri Pitkänen": "DG",
     "Maria Eide": "DG",
     "Ole Helgedagsrud": "DG",
     "Jonas Brunsvik": "DG",
@@ -195,7 +182,7 @@
     },
     {
       "by": "Kupla",
-      "amount": 1037.95,
+      "amount": 1019.61,
       "currency": "eur",
       "what": "aggregate Kupla expenses",
       "split": {
