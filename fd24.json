@@ -39,6 +39,30 @@
     "Elli Törnqvist",
     "Emmi Kosomaa"
   ],
+  "in_care_of": {
+    "Kupla": "DG",
+    "Henri Pitkänen": "DG",
+    "Maria Eide": "DG",
+    "Ole Helgedagsrud": "DG",
+    "Jonas Brunsvik": "DG",
+    "Fredrik Hiorth": "DG",
+    "Norunn Hornset": "DG",
+    "Alexandru Carbuneanu": "DG",
+    "Axel Grøvdal": "DG",
+    "Christine Høyem": "DG",
+    "Eirik Lygresten": "DG",
+    "Håkon Kindem": "DG",
+    "Ine Tønnesen": "DG",
+    "Inez Aase": "DG",
+    "Kristine Nicolaisen": "DG",
+    "Mare Nyvoll": "DG",
+    "Markus Lagesen": "DG",
+    "Martin Rønning": "DG",
+    "Zule Zubčić": "DG",
+    "Pau Pardo": "DG",
+    "Terese Borøy": "DG",
+    "Thea Skylstad": "DG"
+  },
   "transfers": [
     {
       "from": "Ine Tønnesen",
