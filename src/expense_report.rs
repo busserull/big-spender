@@ -31,19 +31,17 @@ impl ExpenseReport {
                 .participants
                 .iter()
                 .position(|name| *name == child)
-                .expect(&format!(
-                    "In care of child '{}' is not in participant list",
-                    child
-                ));
+                .unwrap_or_else(|| {
+                    panic!("In care of child '{}' is not in participant list", child)
+                });
 
             let parent_index = input
                 .participants
                 .iter()
                 .position(|name| *name == parent)
-                .expect(&format!(
-                    "In care of parent '{}' is not in participant list",
-                    parent
-                ));
+                .unwrap_or_else(|| {
+                    panic!("In care of parent '{}' is not in participant list", parent)
+                });
 
             assert_ne!(
                 parent_index, child_index,
@@ -99,7 +97,7 @@ impl ExpenseReport {
         &self.history
     }
 
-    pub fn balance(&self) -> (Vec<(String, String, f64)>, Vec<(String, f64)>) {
+    pub fn balance(&self) -> (Vec<Handover>, Vec<Residual>) {
         let mut balances: Vec<i64> = vec![0; self.participants.len()];
 
         for transaction in self.transactions.iter() {
@@ -118,8 +116,8 @@ impl ExpenseReport {
             let amount = balances[child];
 
             if balances[child] != 0 {
-                let transaction = self.positive_transfer(child, parent, amount);
-                to_be_done.push(transaction);
+                let handover = self.positive_handover(child, parent, amount);
+                to_be_done.push(handover);
             }
 
             balances[parent] += balances[child];
@@ -137,7 +135,7 @@ impl ExpenseReport {
                     balances[i] -= amount;
                     balances[j] += amount;
 
-                    let transaction = self.positive_transfer(i, j, amount);
+                    let transaction = self.positive_handover(i, j, amount);
 
                     to_be_done.push(transaction);
                 }
@@ -238,7 +236,7 @@ impl ExpenseReport {
         self.history.push(entry.join("\n"));
     }
 
-    fn positive_transfer(&self, a: usize, b: usize, amount: i64) -> (String, String, f64) {
+    fn positive_handover(&self, a: usize, b: usize, amount: i64) -> Handover {
         let (from, to) = if amount > 0 {
             (self.participants[a].clone(), self.participants[b].clone())
         } else {
@@ -249,23 +247,17 @@ impl ExpenseReport {
     }
 
     fn get_participant_index(&self, participant: &str) -> usize {
-        self.participant_indices
+        *self
+            .participant_indices
             .get(participant)
-            .expect(&format!(
-                "Participant '{}' is not in participant list",
-                participant
-            ))
-            .clone()
+            .unwrap_or_else(|| panic!("Participant '{}' is not in participant list", participant))
     }
 
     fn get_exchange_rate(&self, currency: &str) -> f64 {
-        self.exchange_rates
+        *self
+            .exchange_rates
             .get(currency)
-            .expect(&format!(
-                "Currency '{}' not defined in exchange rates",
-                currency
-            ))
-            .clone()
+            .unwrap_or_else(|| panic!("Currency '{}' not defined in exchange rates", currency))
     }
 
     fn base_currency_text(&self, amount: f64, currency: &str) -> String {
@@ -279,6 +271,10 @@ impl ExpenseReport {
         }
     }
 }
+
+type Handover = (String, String, f64);
+
+type Residual = (String, f64);
 
 #[derive(Clone, Copy, Debug)]
 struct Transaction {
