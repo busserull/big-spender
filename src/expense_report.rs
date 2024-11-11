@@ -144,6 +144,8 @@ impl ExpenseReport {
             }
         }
 
+        to_be_done.sort_unstable_by(|(a, b, _), (c, d, _)| (a, b).cmp(&(c, d)));
+
         let residuals = balances
             .into_iter()
             .enumerate()
