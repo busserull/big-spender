@@ -6,6 +6,7 @@ use std::fmt;
 pub struct ExpenseReport {
     participants: Vec<String>,
     participant_indices: HashMap<String, usize>,
+    in_care_of_indices: Vec<Option<usize>>,
     exchange_rates: HashMap<String, f64>,
     base_currency: String,
     transactions: Vec<Transaction>,
@@ -23,6 +24,36 @@ impl ExpenseReport {
             .map(|(id, name)| (name.clone(), id))
             .collect();
 
+        let mut in_care_of_indices = vec![None; input.participants.len()];
+
+        for (child, parent) in input.in_care_of.into_iter() {
+            let child_index = input
+                .participants
+                .iter()
+                .position(|name| *name == child)
+                .expect(&format!(
+                    "In care of child '{}' is not in participant list",
+                    child
+                ));
+
+            let parent_index = input
+                .participants
+                .iter()
+                .position(|name| *name == parent)
+                .expect(&format!(
+                    "In care of parent '{}' is not in participant list",
+                    parent
+                ));
+
+            assert_ne!(
+                parent_index, child_index,
+                "'{}' is be in care of itself",
+                child
+            );
+
+            in_care_of_indices[child_index] = Some(parent_index);
+        }
+
         let mut exchange_rates: HashMap<String, f64> = HashMap::new();
 
         exchange_rates.insert(input.currency.clone(), 1.00);
@@ -34,6 +65,7 @@ impl ExpenseReport {
         let mut report = Self {
             participants: input.participants,
             participant_indices,
+            in_care_of_indices,
             exchange_rates,
             base_currency: input.currency,
             transactions: Vec::new(),
@@ -76,6 +108,24 @@ impl ExpenseReport {
 
         let mut to_be_done = Vec::new();
 
+        for (child, parent) in self
+            .in_care_of_indices
+            .iter()
+            .enumerate()
+            .filter(|(_, p)| p.is_some())
+            .map(|(c, p)| (c, p.unwrap()))
+        {
+            let amount = balances[child];
+
+            if balances[child] != 0 {
+                let transaction = self.positive_transfer(child, parent, amount);
+                to_be_done.push(transaction);
+            }
+
+            balances[parent] += balances[child];
+            balances[child] = 0;
+        }
+
         for i in 0..balances.len() - 1 {
             let mut j = i + 1;
 
@@ -87,13 +137,9 @@ impl ExpenseReport {
                     balances[i] -= amount;
                     balances[j] += amount;
 
-                    let (from, to) = if amount > 0 {
-                        (self.participants[i].clone(), self.participants[j].clone())
-                    } else {
-                        (self.participants[j].clone(), self.participants[i].clone())
-                    };
+                    let transaction = self.positive_transfer(i, j, amount);
 
-                    to_be_done.push((from, to, (amount.abs() as f64) / 100.0));
+                    to_be_done.push(transaction);
                 }
 
                 j += 1;
@@ -192,11 +238,21 @@ impl ExpenseReport {
         self.history.push(entry.join("\n"));
     }
 
+    fn positive_transfer(&self, a: usize, b: usize, amount: i64) -> (String, String, f64) {
+        let (from, to) = if amount > 0 {
+            (self.participants[a].clone(), self.participants[b].clone())
+        } else {
+            (self.participants[b].clone(), self.participants[a].clone())
+        };
+
+        (from, to, (amount.abs() as f64) / 100.0)
+    }
+
     fn get_participant_index(&self, participant: &str) -> usize {
         self.participant_indices
             .get(participant)
             .expect(&format!(
-                "Participant '{}' is in participant list",
+                "Participant '{}' is not in participant list",
                 participant
             ))
             .clone()
@@ -255,6 +311,7 @@ struct JsonInput {
     currency: String,
     exchange_rates: HashMap<String, f64>,
     participants: Vec<String>,
+    in_care_of: HashMap<String, String>,
     transfers: Vec<JsonTransfer>,
     expenses: Vec<JsonExpense>,
 }
