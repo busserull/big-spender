@@ -1,0 +1,35 @@
+{
+  "currency": "nok",
+  "exchange_rates": {},
+  "participants": [
+    "DG",
+    "Jonas Brunsvik",
+    "Håkon Kindem",
+    "Mare Nyvoll",
+    "Michal Jachimowicz",
+    "Pau Pardo",
+    "Sara Lagreid",
+    "Sindre Østby",
+    "William Bjelland",
+    "Kolbjørn Austreng"
+  ],
+  "in_care_of": {},
+  "transfers": [],
+  "expenses": [
+    {
+      "by": "DG",
+      "amount": 11910.00,
+      "currency": "nok",
+      "what": "stay at Hopsjøbrygga",
+      "split": {
+        "Jonas Brunsvik": 1,
+        "Håkon Kindem": 1,
+        "Michal Jachimowicz": 1,
+        "Pau Pardo": 1,
+        "Sara Lagreid": 1,
+        "Sindre Østby": 1,
+        "William Bjelland": 1
+      }
+    }
+  ]
+}
