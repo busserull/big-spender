@@ -183,6 +183,13 @@
       "amount": 280.0,
       "currency": "nok",
       "what": "payment after trip"
+    },
+    {
+      "from": "Inez Aase",
+      "to": "DG",
+      "amount": 3485.0,
+      "currency": "nok",
+      "what": "payment after trip"
     }
   ],
   "expenses": [
