@@ -526,6 +526,94 @@
         "Thea Skylstad": 4,
         "Kupla": 77
       }
+    },
+    {
+      "by": "Christine Høyem",
+      "amount": 1251.20,
+      "currency": "nok",
+      "what": "reimbursement cost of driving",
+      "split": {
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnesen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Pau Pardo",
+      "amount": 1251.20,
+      "currency": "nok",
+      "what": "reimbursement cost of driving",
+      "split": {
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnesen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Zule Zubčić": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Thea Skylstad",
+      "amount": 1251.20,
+      "currency": "nok",
+      "what": "reimbursement cost of driving",
+      "split": {
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnesen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1
+      }
+    },
+    {
+      "by": "Ole Helgedagsrud",
+      "amount": 1251.20,
+      "currency": "nok",
+      "what": "reimbursement cost of driving",
+      "split": {
+        "Maria Eide": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnesen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
     }
   ]
 }
