@@ -120,6 +120,69 @@
       "amount": 2600.0,
       "currency": "nok",
       "what": "deposit"
+    },
+    {
+      "from": "DG",
+      "to": "Ole Helgedagsrud",
+      "amount": 2112.0,
+      "currency": "nok",
+      "what": "[stealth] reimbursement for food"
+    },
+    {
+      "from": "DG",
+      "to": "Kristine Nicolaisen",
+      "amount": 1600.34,
+      "currency": "nok",
+      "what": "[stealth] reimbursement for food"
+    },
+    {
+      "from": "DG",
+      "to": "Zule Zubčić",
+      "amount": 919.96,
+      "currency": "nok",
+      "what": "[stealth] reimbursement for fuel"
+    },
+    {
+      "from": "DG",
+      "to": "Zule Zubčić",
+      "amount": 229.30,
+      "currency": "nok",
+      "what": "[stealth] reimbursement for food"
+    },
+    {
+      "from": "DG",
+      "to": "Martin Rønning",
+      "amount": 1963.0,
+      "currency": "nok",
+      "what": "[stealth] reimbursement for food"
+    },
+    {
+      "from": "DG",
+      "to": "Martin Rønning",
+      "amount": 445.0,
+      "currency": "nok",
+      "what": "[stealth] reimbursement for food"
+    },
+    {
+      "from": "Kupla",
+      "to": "DG",
+      "amount": 6921.66,
+      "currency": "nok",
+      "what": "payment after trip"
+    },
+    {
+      "from": "Christine Høyem",
+      "to": "DG",
+      "amount": 2665.49,
+      "currency": "nok",
+      "what": "payment after trip"
+    },
+    {
+      "from": "Ole Helgedagsrud",
+      "to": "DG",
+      "amount": 280.0,
+      "currency": "nok",
+      "what": "payment after trip"
     }
   ],
   "expenses": [
@@ -609,6 +672,34 @@
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
         "Markus Lagesen": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "DG",
+      "amount": 1220.0,
+      "currency": "nok",
+      "what": "missing Fjøset fuel paid by Mathias Salomonsen",
+      "split": {
+        "Fredrik Hiorth": 1,
+        "Norunn Hornset": 1,
+        "Jonas Brunsvik": 1,
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Axel Grøvdal": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnesen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
         "Zule Zubčić": 1,
         "Pau Pardo": 1,
         "Terese Borøy": 1,
