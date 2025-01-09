@@ -15,7 +15,7 @@
     "Christine Høyem",
     "Eirik Lygresten",
     "Håkon Kindem",
-    "Ine Tønnesen",
+    "Ine Tønnessen",
     "Inez Aase",
     "Kristine Nicolaisen",
     "Mare Nyvoll",
@@ -39,7 +39,7 @@
     "Christine Høyem": "DG",
     "Eirik Lygresten": "DG",
     "Håkon Kindem": "DG",
-    "Ine Tønnesen": "DG",
+    "Ine Tønnessen": "DG",
     "Inez Aase": "DG",
     "Kristine Nicolaisen": "DG",
     "Mare Nyvoll": "DG",
@@ -52,7 +52,7 @@
   },
   "transfers": [
     {
-      "from": "Ine Tønnesen",
+      "from": "Ine Tønnessen",
       "to": "DG",
       "amount": 2600.0,
       "currency": "nok",
@@ -209,7 +209,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -238,7 +238,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -252,7 +252,7 @@
     },
     {
       "by": "Kupla",
-      "amount": 1117.54,
+      "amount": 835.56,
       "currency": "eur",
       "what": "aggregate Kupla expenses",
       "split": {
@@ -266,7 +266,7 @@
         "Christine Høyem": 5,
         "Eirik Lygresten": 3,
         "Håkon Kindem": 3,
-        "Ine Tønnesen": 3,
+        "Ine Tønnessen": 3,
         "Inez Aase": 4,
         "Kristine Nicolaisen": 7,
         "Mare Nyvoll": 7,
@@ -276,6 +276,177 @@
         "Pau Pardo": 5,
         "Terese Borøy": 7,
         "Thea Skylstad": 4
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 2.9,
+      "currency": "eur",
+      "what": "2 beer and 1 läsk",
+      "split": {
+        "Alexandru Carbuneanu": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 24.61,
+      "currency": "eur",
+      "what": "1 beer, 6 longero, 17 läsk",
+      "split": {
+        "Christine Høyem": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 2.43,
+      "currency": "eur",
+      "what": "1 longero and 1 läsk",
+      "split": {
+        "Håkon Kindem": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 3.47,
+      "currency": "eur",
+      "what": "1 beer, 1 longero, and 1 läsk",
+      "split": {
+        "Ine Tønnessen": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 4.03,
+      "currency": "eur",
+      "what": "2 longero and 1 läsk",
+      "split": {
+        "Inez Aase": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 49.5,
+      "currency": "eur",
+      "what": "29 beer and 12 longero",
+      "split": {
+        "Zule Zubčić": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 6.77,
+      "currency": "eur",
+      "what": "1 beer and 7 läsk",
+      "split": {
+        "Kristine Nicolaisen": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 33.13,
+      "currency": "eur",
+      "what": "15 longero and 11 läsk",
+      "split": {
+        "Mare Nyvoll": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 2.08,
+      "currency": "eur",
+      "what": "2 beer",
+      "split": {
+        "Maria Eide": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 52.53,
+      "currency": "eur",
+      "what": "11 beer, 23 longero, and 5 läsk",
+      "split": {
+        "Markus Lagesen": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 24.54,
+      "currency": "eur",
+      "what": "15 beer, 3 longero, and 5 läsk",
+      "split": {
+        "Martin Rønning": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 3.47,
+      "currency": "eur",
+      "what": "1 beer, 1 longero, and 1 läsk",
+      "split": {
+        "Ole Helgedagsrud": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 0.82,
+      "currency": "eur",
+      "what": "1 läsk",
+      "split": {
+        "Pau Pardo": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 24.21,
+      "currency": "eur",
+      "what": "12 longero and 6 läsk",
+      "split": {
+        "Terese Borøy": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 9.39,
+      "currency": "eur",
+      "what": "2 beer, 2 longero, and 5 läsk",
+      "split": {
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 5.11,
+      "currency": "eur",
+      "what": "1 beer, 1 longero, and 3 läsk",
+      "split": {
+        "Jonas Brunsvik": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 14.41,
+      "currency": "eur",
+      "what": "3 beer, 6 longero, and 2 läsk",
+      "split": {
+        "Axel Grøvdal": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 12.46,
+      "currency": "eur",
+      "what": "5 beer, 4 longero, and 1 läsk",
+      "split": {
+        "Fredrik Hiorth": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 6.12,
+      "currency": "eur",
+      "what": "2 beer, 2 longero, and 1 läsk",
+      "split": {
+        "Norunn Hornset": 1
       }
     },
     {
@@ -294,7 +465,7 @@
         "Christine Høyem": 5,
         "Eirik Lygresten": 3,
         "Håkon Kindem": 3,
-        "Ine Tønnesen": 3,
+        "Ine Tønnessen": 3,
         "Inez Aase": 4,
         "Kristine Nicolaisen": 7,
         "Mare Nyvoll": 7,
@@ -323,7 +494,7 @@
         "Christine Høyem": 5,
         "Eirik Lygresten": 3,
         "Håkon Kindem": 3,
-        "Ine Tønnesen": 3,
+        "Ine Tønnessen": 3,
         "Inez Aase": 4,
         "Kristine Nicolaisen": 7,
         "Mare Nyvoll": 7,
@@ -348,7 +519,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -396,7 +567,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -425,7 +596,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -454,7 +625,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -478,7 +649,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -503,7 +674,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -527,7 +698,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -555,7 +726,7 @@
         "Christine Høyem": 5,
         "Eirik Lygresten": 3,
         "Håkon Kindem": 3,
-        "Ine Tønnesen": 3,
+        "Ine Tønnessen": 3,
         "Inez Aase": 4,
         "Kristine Nicolaisen": 7,
         "Mare Nyvoll": 7,
@@ -584,7 +755,7 @@
         "Christine Høyem": 5,
         "Eirik Lygresten": 3,
         "Håkon Kindem": 3,
-        "Ine Tønnesen": 3,
+        "Ine Tønnessen": 3,
         "Inez Aase": 4,
         "Kristine Nicolaisen": 7,
         "Mare Nyvoll": 7,
@@ -608,7 +779,7 @@
         "Alexandru Carbuneanu": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -631,7 +802,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -653,7 +824,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -674,7 +845,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
@@ -701,7 +872,7 @@
         "Christine Høyem": 1,
         "Eirik Lygresten": 1,
         "Håkon Kindem": 1,
-        "Ine Tønnesen": 1,
+        "Ine Tønnessen": 1,
         "Inez Aase": 1,
         "Kristine Nicolaisen": 1,
         "Mare Nyvoll": 1,
