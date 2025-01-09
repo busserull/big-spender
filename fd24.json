@@ -5,6 +5,7 @@
   },
   "participants": [
     "DG",
+    "Dypet",
     "Maria Eide",
     "Ole Helgedagsrud",
     "Jonas Brunsvik",
@@ -252,7 +253,7 @@
     },
     {
       "by": "Kupla",
-      "amount": 835.56,
+      "amount": 428.50,
       "currency": "eur",
       "what": "aggregate Kupla expenses",
       "split": {
@@ -276,6 +277,24 @@
         "Pau Pardo": 5,
         "Terese Borøy": 7,
         "Thea Skylstad": 4
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 407.06,
+      "currency": "eur",
+      "what": "drinks left at Dypet",
+      "split": {
+        "Dypet": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 77.18,
+      "currency": "eur",
+      "what": "drinks consumed at Genfors",
+      "split": {
+        "Dypet": 1
       }
     },
     {
