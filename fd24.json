@@ -26,7 +26,8 @@
     "Pau Pardo",
     "Terese Borøy",
     "Thea Skylstad",
-    "Kupla"
+    "Kupla",
+    "Kolbjørn Austreng"
   ],
   "in_care_of": {
     "Kupla": "DG",
@@ -127,42 +128,42 @@
       "to": "Ole Helgedagsrud",
       "amount": 2112.0,
       "currency": "nok",
-      "what": "[stealth] reimbursement for food"
+      "what": "reimbursement for food"
     },
     {
       "from": "DG",
       "to": "Kristine Nicolaisen",
       "amount": 1600.34,
       "currency": "nok",
-      "what": "[stealth] reimbursement for food"
+      "what": "reimbursement for food"
     },
     {
       "from": "DG",
       "to": "Zule Zubčić",
       "amount": 919.96,
       "currency": "nok",
-      "what": "[stealth] reimbursement for fuel"
+      "what": "reimbursement for fuel"
     },
     {
       "from": "DG",
       "to": "Zule Zubčić",
       "amount": 229.30,
       "currency": "nok",
-      "what": "[stealth] reimbursement for food"
+      "what": "reimbursement for food"
     },
     {
       "from": "DG",
       "to": "Martin Rønning",
       "amount": 1963.0,
       "currency": "nok",
-      "what": "[stealth] reimbursement for food"
+      "what": "reimbursement for food"
     },
     {
       "from": "DG",
       "to": "Martin Rønning",
       "amount": 445.0,
       "currency": "nok",
-      "what": "[stealth] reimbursement for food"
+      "what": "reimbursement for food"
     },
     {
       "from": "Kupla",
@@ -253,7 +254,7 @@
     },
     {
       "by": "Kupla",
-      "amount": 428.50,
+      "amount": 328.50,
       "currency": "eur",
       "what": "aggregate Kupla expenses",
       "split": {
@@ -277,6 +278,15 @@
         "Pau Pardo": 5,
         "Terese Borøy": 7,
         "Thea Skylstad": 4
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 100.0,
+      "currency": "eur",
+      "what": "deep cleaning of pee couch",
+      "split": {
+        "Markus Lagesen": 1
       }
     },
     {
@@ -600,6 +610,35 @@
       }
     },
     {
+      "by": "Ole Helgedagsrud",
+      "amount": 2112.0,
+      "currency": "nok",
+      "what": "food",
+      "split": {
+        "Fredrik Hiorth": 2,
+        "Norunn Hornset": 2,
+        "Jonas Brunsvik": 3,
+        "Maria Eide": 2,
+        "Ole Helgedagsrud": 3,
+        "Alexandru Carbuneanu": 3,
+        "Axel Grøvdal": 2,
+        "Christine Høyem": 5,
+        "Eirik Lygresten": 3,
+        "Håkon Kindem": 3,
+        "Ine Tønnessen": 3,
+        "Inez Aase": 4,
+        "Kristine Nicolaisen": 7,
+        "Mare Nyvoll": 7,
+        "Markus Lagesen": 7,
+        "Martin Rønning": 5,
+        "Zule Zubčić": 7,
+        "Pau Pardo": 5,
+        "Terese Borøy": 7,
+        "Thea Skylstad": 4,
+        "Kupla": 77
+      }
+    },
+    {
       "by": "Christine Høyem",
       "amount": 449.90,
       "currency": "nok",
@@ -880,6 +919,34 @@
       "amount": 1220.0,
       "currency": "nok",
       "what": "missing Fjøset fuel paid by Mathias Salomonsen",
+      "split": {
+        "Fredrik Hiorth": 1,
+        "Norunn Hornset": 1,
+        "Jonas Brunsvik": 1,
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Axel Grøvdal": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 100.91,
+      "currency": "nok",
+      "what": "internal balancing",
       "split": {
         "Fredrik Hiorth": 1,
         "Norunn Hornset": 1,
