@@ -192,6 +192,34 @@
       "amount": 3485.0,
       "currency": "nok",
       "what": "payment after trip"
+    },
+    {
+      "from": "Eirik Lygresten",
+      "to": "DG",
+      "amount": 320.53,
+      "currency": "nok",
+      "what": "payment after trip"
+    },
+    {
+      "from": "Terese Borøy",
+      "to": "DG",
+      "amount": 3655.40,
+      "currency": "nok",
+      "what": "payment after trip"
+    },
+    {
+      "from": "Alexandru Carbuneanu",
+      "to": "DG",
+      "amount": 3278.01,
+      "currency": "nok",
+      "what": "payment after trip"
+    },
+    {
+      "from": "Ine Tønnessen",
+      "to": "DG",
+      "amount": 739.01,
+      "currency": "nok",
+      "what": "payment after trip"
     }
   ],
   "expenses": [
