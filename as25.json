@@ -1,0 +1,51 @@
+{
+  "currency": "nok",
+  "exchange_rates": {},
+  "participants": [
+    "DG",
+    "Alexandru",
+    "Axel",
+    "Eirik",
+    "Bjøralt",
+    "Brunsvik",
+    "Kolbjørn",
+    "Kristine",
+    "Mare",
+    "Michal",
+    "Ole",
+    "Pau"
+  ],
+  "in_care_of": {},
+  "transfers": [],
+  "expenses": [
+    {
+      "by": "DG",
+      "amount": 50400.00,
+      "currency": "nok",
+      "what": "rent of club house",
+      "split": {
+        "Fredrik Hiorth": 1,
+        "Norunn Hornset": 1,
+        "Jonas Brunsvik": 1,
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Axel Grøvdal": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1,
+        "Kupla": 11
+      }
+    }
+  ]
+}
