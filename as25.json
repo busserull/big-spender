@@ -15,36 +15,266 @@
     "Ole",
     "Pau"
   ],
-  "in_care_of": {},
+  "in_care_of": {
+    "Alexandru": "DG",
+    "Axel": "DG",
+    "Eirik": "DG",
+    "Bjøralt": "DG",
+    "Brunsvik": "DG",
+    "Kolbjørn": "DG",
+    "Kristine": "DG",
+    "Mare": "DG",
+    "Michal": "DG",
+    "Ole": "DG",
+    "Pau": "DG"
+  },
   "transfers": [],
   "expenses": [
     {
       "by": "DG",
-      "amount": 50400.00,
+      "amount": 14400.00,
       "currency": "nok",
       "what": "rent of club house",
       "split": {
-        "Fredrik Hiorth": 1,
-        "Norunn Hornset": 1,
-        "Jonas Brunsvik": 1,
-        "Maria Eide": 1,
-        "Ole Helgedagsrud": 1,
-        "Alexandru Carbuneanu": 1,
-        "Axel Grøvdal": 1,
-        "Christine Høyem": 1,
-        "Eirik Lygresten": 1,
-        "Håkon Kindem": 1,
-        "Ine Tønnessen": 1,
-        "Inez Aase": 1,
-        "Kristine Nicolaisen": 1,
-        "Mare Nyvoll": 1,
-        "Markus Lagesen": 1,
-        "Martin Rønning": 1,
-        "Zule Zubčić": 1,
-        "Pau Pardo": 1,
-        "Terese Borøy": 1,
-        "Thea Skylstad": 1,
-        "Kupla": 11
+        "Alexandru": 3,
+        "Axel": 3,
+        "Eirik": 3,
+        "Bjøralt": 2,
+        "Brunsvik": 3,
+        "Kolbjørn": 3,
+        "Kristine": 3,
+        "Mare": 3,
+        "Michal": 3,
+        "Ole": 3,
+        "Pau": 3
+      }
+    },
+    {
+      "by": "DG",
+      "amount": 1500.00,
+      "currency": "nok",
+      "what": "cleaning of club house",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "DG",
+      "amount": 6073.15,
+      "currency": "nok",
+      "what": "rental car",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "Axel",
+      "amount": 128.20,
+      "currency": "nok",
+      "what": "snacks",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "Axel",
+      "amount": 453.65,
+      "currency": "nok",
+      "what": "fuel for Fjøset",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "Pau",
+      "amount": 154.00,
+      "currency": "nok",
+      "what": "snacks",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "Axel",
+      "amount": 175.00,
+      "currency": "nok",
+      "what": "ramp access for setting Fjøset",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "Axel",
+      "amount": 175.00,
+      "currency": "nok",
+      "what": "ramp access for retrieving Fjøset",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "Eirik",
+      "amount": 39.80,
+      "currency": "nok",
+      "what": "sour cream for taco",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "Kolbjørn",
+      "amount": 1519.19,
+      "currency": "nok",
+      "what": "fuel for rental",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "Kolbjørn",
+      "amount": 508.20,
+      "currency": "nok",
+      "what": "chili con/sin carne",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "Kolbjørn",
+      "amount": 1792.29,
+      "currency": "nok",
+      "what": "pizza, lunch, and snacks",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
+      }
+    },
+    {
+      "by": "Alexandru",
+      "amount": 2251.71,
+      "currency": "nok",
+      "what": "groceries",
+      "split": {
+        "Alexandru": 1,
+        "Axel": 1,
+        "Eirik": 1,
+        "Bjøralt": 1,
+        "Brunsvik": 1,
+        "Kolbjørn": 1,
+        "Kristine": 1,
+        "Mare": 1,
+        "Michal": 1,
+        "Ole": 1,
+        "Pau": 1
       }
     }
   ]
