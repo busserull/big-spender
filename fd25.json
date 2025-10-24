@@ -1,0 +1,1163 @@
+{
+  "currency": "nok",
+  "exchange_rates": {
+    "eur": 11.71
+  },
+  "participants": [
+    "DG",
+    "Terese Borøy",
+    "Kristine Nicolaisen",
+    "Tabea Coors",
+    "Christine Høyem",
+    "Fin Hoyer",
+    "Guillaume Maertens de Noordhout",
+    "Jonas Brunsvik",
+    "Martin Rønning",
+    "Dawid Bokwa",
+    "Patrick Bösch",
+    "Håkon Kindem",
+    "Kasper Langland",
+    "Axel Grøvdal",
+    "Fredrik Hiorth",
+    "Stian Backe",
+    "Kolbjørn Austreng",
+    "Dmitri Gorski",
+    "Magnus Sundgot",
+    "Andreas Utkilen",
+    "Zule Zubcic",
+    "Stine Sagelvmo",
+    "Laura Palama",
+    "Mateus Pedrosa",
+    "Pedro Senna",
+    "Kupla"
+  ],
+  "in_care_of": {
+    "Terese Borøy": "DG",
+    "Kristine Nicolaisen": "DG",
+    "Tabea Coors": "DG",
+    "Christine Høyem": "DG",
+    "Fin Hoyer": "DG",
+    "Guillaume Maertens de Noordhout": "DG",
+    "Jonas Brunsvik": "DG",
+    "Martin Rønning": "DG",
+    "Dawid Bokwa": "DG",
+    "Patrick Bösch": "DG",
+    "Håkon Kindem": "DG",
+    "Kasper Langland": "DG",
+    "Axel Grøvdal": "DG",
+    "Fredrik Hiorth": "DG",
+    "Stian Backe": "DG",
+    "Kolbjørn Austreng": "DG",
+    "Dmitri Gorski": "DG",
+    "Magnus Sundgot": "DG",
+    "Andreas Utkilen": "DG",
+    "Zule Zubcic": "DG",
+    "Stine Sagelvmo": "DG",
+    "Laura Palama": "DG",
+    "Mateus Pedrosa": "DG",
+    "Pedro Senna": "DG",
+    "Kupla": "DG"
+  },
+  "transfers": [
+    {
+      "from": "Ine Tønnessen",
+      "to": "DG",
+      "amount": 2600.0,
+      "currency": "nok",
+      "what": "deposit"
+    }
+  ],
+  "expenses": [
+    {
+      "by": "DG",
+      "amount": 94040.00,
+      "currency": "nok",
+      "what": "rent of Angelamfi",
+      "split": {
+        "Terese Borøy": 8,
+        "Kristine Nicolaisen": 8,
+        "Tabea Coors": 8,
+        "Christine Høyem": 8,
+        "Fin Hoyer": 8,
+        "Guillaume Maertens de Noordhout": 8,
+        "Jonas Brunsvik": 8,
+        "Martin Rønning": 8,
+        "Dawid Bokwa": 8,
+        "Patrick Bösch": 8,
+        "Håkon Kindem": 8,
+        "Kasper Langland": 2,
+        "Axel Grøvdal": 8,
+        "Fredrik Hiorth": 8,
+        "Stian Backe": 2,
+        "Kolbjørn Austreng": 8,
+        "Dmitri Gorski": 2,
+        "Magnus Sundgot": 2,
+        "Andreas Utkilen": 2,
+        "Zule Zubcic": 8,
+        "Stine Sagelvmo": 2,
+        "Laura Palama": 4,
+        "Mateus Pedrosa": 4,
+        "Pedro Senna": 4,
+        "Kupla": 91
+      }
+    },
+    {
+      "by": "Dmitri Gorski",
+      "amount": 4963.99,
+      "currency": "nok",
+      "what": "food for DG first day, and DG and Kupla second day",
+      "split": {
+        "Terese Borøy": 2,
+        "Kristine Nicolaisen": 2,
+        "Tabea Coors": 2,
+        "Christine Høyem": 2,
+        "Fin Hoyer": 2,
+        "Guillaume Maertens de Noordhout": 2,
+        "Jonas Brunsvik": 2,
+        "Martin Rønning": 2,
+        "Dawid Bokwa": 2,
+        "Patrick Bösch": 2,
+        "Håkon Kindem": 2,
+        "Kasper Langland": 2,
+        "Axel Grøvdal": 2,
+        "Fredrik Hiorth": 2,
+        "Stian Backe": 2,
+        "Kolbjørn Austreng": 2,
+        "Dmitri Gorski": 2,
+        "Magnus Sundgot": 2,
+        "Andreas Utkilen": 2,
+        "Zule Zubcic": 2,
+        "Stine Sagelvmo": 2,
+        "Laura Palama": 2,
+        "Mateus Pedrosa": 2,
+        "Pedro Senna": 2,
+        "Kupla": 13
+      }
+    },
+    {
+      "by": "Martin Rønning",
+      "amount": 1762.29,
+      "currency": "nok",
+      "what": "fuel for Fjøset",
+      "split": {
+        "Terese Borøy": 1,
+        "Kristine Nicolaisen": 1,
+        "Tabea Coors": 1,
+        "Christine Høyem": 1,
+        "Fin Hoyer": 1,
+        "Guillaume Maertens de Noordhout": 1,
+        "Jonas Brunsvik": 1,
+        "Martin Rønning": 1,
+        "Dawid Bokwa": 1,
+        "Patrick Bösch": 1,
+        "Håkon Kindem": 1,
+        "Kasper Langland": 1,
+        "Axel Grøvdal": 1,
+        "Fredrik Hiorth": 1,
+        "Stian Backe": 1,
+        "Kolbjørn Austreng": 1,
+        "Dmitri Gorski": 1,
+        "Magnus Sundgot": 1,
+        "Andreas Utkilen": 1,
+        "Zule Zubcic": 1,
+        "Stine Sagelvmo": 1,
+        "Laura Palama": 1,
+        "Mateus Pedrosa": 1,
+        "Pedro Senna": 1,
+        "Kupla": 13
+      }
+    },
+    {
+      "by": "Terese Borøy",
+      "amount": 1445.98,
+      "currency": "nok",
+      "what": "fuel for Fjøset",
+      "split": {
+        "Terese Borøy": 1,
+        "Kristine Nicolaisen": 1,
+        "Tabea Coors": 1,
+        "Christine Høyem": 1,
+        "Fin Hoyer": 1,
+        "Guillaume Maertens de Noordhout": 1,
+        "Jonas Brunsvik": 1,
+        "Martin Rønning": 1,
+        "Dawid Bokwa": 1,
+        "Patrick Bösch": 1,
+        "Håkon Kindem": 1,
+        "Kasper Langland": 1,
+        "Axel Grøvdal": 1,
+        "Fredrik Hiorth": 1,
+        "Stian Backe": 1,
+        "Kolbjørn Austreng": 1,
+        "Dmitri Gorski": 1,
+        "Magnus Sundgot": 1,
+        "Andreas Utkilen": 1,
+        "Zule Zubcic": 1,
+        "Stine Sagelvmo": 1,
+        "Laura Palama": 1,
+        "Mateus Pedrosa": 1,
+        "Pedro Senna": 1,
+        "Kupla": 13
+      }
+    },
+    {
+      "by": "Fredrik Hiorth",
+      "amount": 977.80,
+      "currency": "nok",
+      "what": "fuel for Fjøset",
+      "split": {
+        "Terese Borøy": 1,
+        "Kristine Nicolaisen": 1,
+        "Tabea Coors": 1,
+        "Christine Høyem": 1,
+        "Fin Hoyer": 1,
+        "Guillaume Maertens de Noordhout": 1,
+        "Jonas Brunsvik": 1,
+        "Martin Rønning": 1,
+        "Dawid Bokwa": 1,
+        "Patrick Bösch": 1,
+        "Håkon Kindem": 1,
+        "Kasper Langland": 1,
+        "Axel Grøvdal": 1,
+        "Fredrik Hiorth": 1,
+        "Stian Backe": 1,
+        "Kolbjørn Austreng": 1,
+        "Dmitri Gorski": 1,
+        "Magnus Sundgot": 1,
+        "Andreas Utkilen": 1,
+        "Zule Zubcic": 1,
+        "Stine Sagelvmo": 1,
+        "Laura Palama": 1,
+        "Mateus Pedrosa": 1,
+        "Pedro Senna": 1,
+        "Kupla": 13
+      }
+    },
+    {
+      "by": "Patrick Bösch",
+      "amount": 647.90,
+      "currency": "nok",
+      "what": "soap and whiteboard",
+      "split": {
+        "Terese Borøy": 1,
+        "Kristine Nicolaisen": 1,
+        "Tabea Coors": 1,
+        "Christine Høyem": 1,
+        "Fin Hoyer": 1,
+        "Guillaume Maertens de Noordhout": 1,
+        "Jonas Brunsvik": 1,
+        "Martin Rønning": 1,
+        "Dawid Bokwa": 1,
+        "Patrick Bösch": 1,
+        "Håkon Kindem": 1,
+        "Kasper Langland": 1,
+        "Axel Grøvdal": 1,
+        "Fredrik Hiorth": 1,
+        "Stian Backe": 1,
+        "Kolbjørn Austreng": 1,
+        "Dmitri Gorski": 1,
+        "Magnus Sundgot": 1,
+        "Andreas Utkilen": 1,
+        "Zule Zubcic": 1,
+        "Stine Sagelvmo": 1,
+        "Laura Palama": 1,
+        "Mateus Pedrosa": 1,
+        "Pedro Senna": 1,
+        "Kupla": 13
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 8490.55,
+      "currency": "eur",
+      "what": "aggregate Kupla expenses",
+      "split": {
+        "Fredrik Hiorth": 2,
+        "Norunn Hornset": 2,
+        "Jonas Brunsvik": 3,
+        "Maria Eide": 2,
+        "Ole Helgedagsrud": 3,
+        "Alexandru Carbuneanu": 3,
+        "Axel Grøvdal": 2,
+        "Christine Høyem": 5,
+        "Eirik Lygresten": 3,
+        "Håkon Kindem": 3,
+        "Ine Tønnessen": 3,
+        "Inez Aase": 4,
+        "Kristine Nicolaisen": 7,
+        "Mare Nyvoll": 7,
+        "Markus Lagesen": 7,
+        "Martin Rønning": 5,
+        "Zule Zubčić": 7,
+        "Pau Pardo": 5,
+        "Terese Borøy": 7,
+        "Thea Skylstad": 4
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 26.72,
+      "currency": "eur",
+      "what": "21 beer, 4 longero, 7 soda",
+      "split": {
+        "Axel Grøvdal": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 22.27,
+      "currency": "eur",
+      "what": "8 beer, 6 longero, 11 soda",
+      "split": {
+        "Christine Høyem": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 49.98,
+      "currency": "eur",
+      "what": "52 beer, 7 longero, 2 soda",
+      "split": {
+        "Fredrik Hiorth": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 12.78,
+      "currency": "eur",
+      "what": "11 beer, 3 longero, 1 soda",
+      "split": {
+        "Guillaume Maertens de Noordhout": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 12.78,
+      "currency": "eur",
+      "what": "11 beer, 3 longero, 1 soda",
+      "split": {
+        "Håkon Kindem": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 58.24,
+      "currency": "eur",
+      "what": "26 beer, 32 longero, 2 soda",
+      "split": {
+        "Zule Zubcic": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 24.0,
+      "currency": "eur",
+      "what": "5 beer, 14 longero, 5 soda",
+      "split": {
+        "Jonas Brunsvik": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 10.96,
+      "currency": "eur",
+      "what": "1 beer, 6 longero, 4 soda",
+      "split": {
+        "Kolbjørn Austreng": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 12.7,
+      "currency": "eur",
+      "what": "0 beer, 6 longero, 7 soda",
+      "split": {
+        "Kristine Nicolaisen": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 32.71,
+      "currency": "eur",
+      "what": "17 beer, 12 longero, 7 soda",
+      "split": {
+        "Martin Rønning": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 34.83,
+      "currency": "eur",
+      "what": "5 beer, 25 longero, 3 soda",
+      "split": {
+        "Patrick Bösch": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 14.13,
+      "currency": "eur",
+      "what": "4 beer, 6 longero, 5 soda",
+      "split": {
+        "Tabea Coors": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 26.89,
+      "currency": "eur",
+      "what": "0 beer, 17 longero, 9 soda",
+      "split": {
+        "Terese Borøy": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 3.1,
+      "currency": "eur",
+      "what": "4 beer, 0 longero, 0 soda",
+      "split": {
+        "Laura Palama": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 5.38,
+      "currency": "eur",
+      "what": "4 beer, 2 longero, 0 soda",
+      "split": {
+        "Mateus Pedrosa": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 5.74,
+      "currency": "eur",
+      "what": "3 beer, 3 longero, 0 soda",
+      "split": {
+        "Pedro Senna": 1
+      }
+    },
+    {},
+    {},
+    {},
+    {
+      "by": "DG",
+      "amount": 10714.82,
+      "currency": "nok",
+      "what": "rental car for gear and boat",
+      "split": {
+        "Fredrik Hiorth": 1,
+        "Norunn Hornset": 1,
+        "Jonas Brunsvik": 1,
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Axel Grøvdal": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 100.0,
+      "currency": "eur",
+      "what": "deep cleaning of pee couch",
+      "split": {
+        "Markus Lagesen": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 407.06,
+      "currency": "eur",
+      "what": "drinks left at Dypet",
+      "split": {
+        "Dypet": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 77.18,
+      "currency": "eur",
+      "what": "drinks consumed at Genfors",
+      "split": {
+        "Dypet": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 2.9,
+      "currency": "eur",
+      "what": "2 beer and 1 läsk",
+      "split": {
+        "Alexandru Carbuneanu": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 24.61,
+      "currency": "eur",
+      "what": "1 beer, 6 longero, 17 läsk",
+      "split": {
+        "Christine Høyem": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 2.43,
+      "currency": "eur",
+      "what": "1 longero and 1 läsk",
+      "split": {
+        "Håkon Kindem": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 3.47,
+      "currency": "eur",
+      "what": "1 beer, 1 longero, and 1 läsk",
+      "split": {
+        "Ine Tønnessen": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 4.03,
+      "currency": "eur",
+      "what": "2 longero and 1 läsk",
+      "split": {
+        "Inez Aase": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 49.5,
+      "currency": "eur",
+      "what": "29 beer and 12 longero",
+      "split": {
+        "Zule Zubčić": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 6.77,
+      "currency": "eur",
+      "what": "1 beer and 7 läsk",
+      "split": {
+        "Kristine Nicolaisen": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 33.13,
+      "currency": "eur",
+      "what": "15 longero and 11 läsk",
+      "split": {
+        "Mare Nyvoll": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 2.08,
+      "currency": "eur",
+      "what": "2 beer",
+      "split": {
+        "Maria Eide": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 52.53,
+      "currency": "eur",
+      "what": "11 beer, 23 longero, and 5 läsk",
+      "split": {
+        "Markus Lagesen": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 24.54,
+      "currency": "eur",
+      "what": "15 beer, 3 longero, and 5 läsk",
+      "split": {
+        "Martin Rønning": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 3.47,
+      "currency": "eur",
+      "what": "1 beer, 1 longero, and 1 läsk",
+      "split": {
+        "Ole Helgedagsrud": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 0.82,
+      "currency": "eur",
+      "what": "1 läsk",
+      "split": {
+        "Pau Pardo": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 24.21,
+      "currency": "eur",
+      "what": "12 longero and 6 läsk",
+      "split": {
+        "Terese Borøy": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 9.39,
+      "currency": "eur",
+      "what": "2 beer, 2 longero, and 5 läsk",
+      "split": {
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 5.11,
+      "currency": "eur",
+      "what": "1 beer, 1 longero, and 3 läsk",
+      "split": {
+        "Jonas Brunsvik": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 14.41,
+      "currency": "eur",
+      "what": "3 beer, 6 longero, and 2 läsk",
+      "split": {
+        "Axel Grøvdal": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 12.46,
+      "currency": "eur",
+      "what": "5 beer, 4 longero, and 1 läsk",
+      "split": {
+        "Fredrik Hiorth": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 6.12,
+      "currency": "eur",
+      "what": "2 beer, 2 longero, and 1 läsk",
+      "split": {
+        "Norunn Hornset": 1
+      }
+    },
+    {
+      "by": "Thea Skylstad",
+      "amount": 1227.53,
+      "currency": "nok",
+      "what": "gas for Fjøset",
+      "split": {
+        "Fredrik Hiorth": 2,
+        "Norunn Hornset": 2,
+        "Jonas Brunsvik": 3,
+        "Maria Eide": 2,
+        "Ole Helgedagsrud": 3,
+        "Alexandru Carbuneanu": 3,
+        "Axel Grøvdal": 2,
+        "Christine Høyem": 5,
+        "Eirik Lygresten": 3,
+        "Håkon Kindem": 3,
+        "Ine Tønnessen": 3,
+        "Inez Aase": 4,
+        "Kristine Nicolaisen": 7,
+        "Mare Nyvoll": 7,
+        "Markus Lagesen": 7,
+        "Martin Rønning": 5,
+        "Zule Zubčić": 7,
+        "Pau Pardo": 5,
+        "Terese Borøy": 7,
+        "Thea Skylstad": 4,
+        "Kupla": 77
+      }
+    },
+    {
+      "by": "Thea Skylstad",
+      "amount": 246.70,
+      "currency": "nok",
+      "what": "hot drinks for everyone",
+      "split": {
+        "Fredrik Hiorth": 2,
+        "Norunn Hornset": 2,
+        "Jonas Brunsvik": 3,
+        "Maria Eide": 2,
+        "Ole Helgedagsrud": 3,
+        "Alexandru Carbuneanu": 3,
+        "Axel Grøvdal": 2,
+        "Christine Høyem": 5,
+        "Eirik Lygresten": 3,
+        "Håkon Kindem": 3,
+        "Ine Tønnessen": 3,
+        "Inez Aase": 4,
+        "Kristine Nicolaisen": 7,
+        "Mare Nyvoll": 7,
+        "Markus Lagesen": 7,
+        "Martin Rønning": 5,
+        "Zule Zubčić": 7,
+        "Pau Pardo": 5,
+        "Terese Borøy": 7,
+        "Thea Skylstad": 4,
+        "Kupla": 77
+      }
+    },
+    {
+      "by": "Thea Skylstad",
+      "amount": 202.68,
+      "currency": "nok",
+      "what": "lunch on Saturday",
+      "split": {
+        "Jonas Brunsvik": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1,
+        "Kupla": 11
+      }
+    },
+    {
+      "by": "Thea Skylstad",
+      "amount": 789.91,
+      "currency": "nok",
+      "what": "frutti di mare",
+      "split": {
+        "Fredrik Hiorth": 1,
+        "Norunn Hornset": 1,
+        "Maria Eide": 1,
+        "Axel Grøvdal": 1,
+        "Christine Høyem": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1,
+        "Kupla": 11
+      }
+    },
+    {
+      "by": "Christine Høyem",
+      "amount": 119.70,
+      "currency": "nok",
+      "what": "shredded parmigiano",
+      "split": {
+        "Jonas Brunsvik": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1,
+        "Kupla": 11
+      }
+    },
+    {
+      "by": "Ole Helgedagsrud",
+      "amount": 2112.0,
+      "currency": "nok",
+      "what": "food",
+      "split": {
+        "Fredrik Hiorth": 2,
+        "Norunn Hornset": 2,
+        "Jonas Brunsvik": 3,
+        "Maria Eide": 2,
+        "Ole Helgedagsrud": 3,
+        "Alexandru Carbuneanu": 3,
+        "Axel Grøvdal": 2,
+        "Christine Høyem": 5,
+        "Eirik Lygresten": 3,
+        "Håkon Kindem": 3,
+        "Ine Tønnessen": 3,
+        "Inez Aase": 4,
+        "Kristine Nicolaisen": 7,
+        "Mare Nyvoll": 7,
+        "Markus Lagesen": 7,
+        "Martin Rønning": 5,
+        "Zule Zubčić": 7,
+        "Pau Pardo": 5,
+        "Terese Borøy": 7,
+        "Thea Skylstad": 4,
+        "Kupla": 77
+      }
+    },
+    {
+      "by": "Christine Høyem",
+      "amount": 449.90,
+      "currency": "nok",
+      "what": "wine",
+      "split": {
+        "Fredrik Hiorth": 1,
+        "Norunn Hornset": 1,
+        "Jonas Brunsvik": 1,
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Axel Grøvdal": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1,
+        "Kupla": 11
+      }
+    },
+    {
+      "by": "Zule Zubčić",
+      "amount": 919.96,
+      "currency": "nok",
+      "what": "fuel for rental",
+      "split": {
+        "Fredrik Hiorth": 1,
+        "Norunn Hornset": 1,
+        "Jonas Brunsvik": 1,
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Axel Grøvdal": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Zule Zubčić",
+      "amount": 229.30,
+      "currency": "nok",
+      "what": "vegetarian burger patties and ice",
+      "split": {
+        "Jonas Brunsvik": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1,
+        "Kupla": 11
+      }
+    },
+    {
+      "by": "Martin Rønning",
+      "amount": 445.88,
+      "currency": "nok",
+      "what": "breakfast first two days",
+      "split": {
+        "Jonas Brunsvik": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Martin Rønning",
+      "amount": 1963.33,
+      "currency": "nok",
+      "what": "food first two days",
+      "split": {
+        "Jonas Brunsvik": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Kristine Nicolaisen",
+      "amount": 626.42,
+      "currency": "nok",
+      "what": "fuel for boat and compressor",
+      "split": {
+        "Fredrik Hiorth": 2,
+        "Norunn Hornset": 2,
+        "Jonas Brunsvik": 3,
+        "Maria Eide": 2,
+        "Ole Helgedagsrud": 3,
+        "Alexandru Carbuneanu": 3,
+        "Axel Grøvdal": 2,
+        "Christine Høyem": 5,
+        "Eirik Lygresten": 3,
+        "Håkon Kindem": 3,
+        "Ine Tønnessen": 3,
+        "Inez Aase": 4,
+        "Kristine Nicolaisen": 7,
+        "Mare Nyvoll": 7,
+        "Markus Lagesen": 7,
+        "Martin Rønning": 5,
+        "Zule Zubčić": 7,
+        "Pau Pardo": 5,
+        "Terese Borøy": 7,
+        "Thea Skylstad": 4,
+        "Kupla": 77
+      }
+    },
+    {
+      "by": "Kristine Nicolaisen",
+      "amount": 973.92,
+      "currency": "nok",
+      "what": "fuel for boat and compressor",
+      "split": {
+        "Fredrik Hiorth": 2,
+        "Norunn Hornset": 2,
+        "Jonas Brunsvik": 3,
+        "Maria Eide": 2,
+        "Ole Helgedagsrud": 3,
+        "Alexandru Carbuneanu": 3,
+        "Axel Grøvdal": 2,
+        "Christine Høyem": 5,
+        "Eirik Lygresten": 3,
+        "Håkon Kindem": 3,
+        "Ine Tønnessen": 3,
+        "Inez Aase": 4,
+        "Kristine Nicolaisen": 7,
+        "Mare Nyvoll": 7,
+        "Markus Lagesen": 7,
+        "Martin Rønning": 5,
+        "Zule Zubčić": 7,
+        "Pau Pardo": 5,
+        "Terese Borøy": 7,
+        "Thea Skylstad": 4,
+        "Kupla": 77
+      }
+    },
+    {
+      "by": "Christine Høyem",
+      "amount": 1251.20,
+      "currency": "nok",
+      "what": "reimbursement cost of driving",
+      "split": {
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Pau Pardo",
+      "amount": 1251.20,
+      "currency": "nok",
+      "what": "reimbursement cost of driving",
+      "split": {
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Zule Zubčić": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Thea Skylstad",
+      "amount": 1251.20,
+      "currency": "nok",
+      "what": "reimbursement cost of driving",
+      "split": {
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1
+      }
+    },
+    {
+      "by": "Ole Helgedagsrud",
+      "amount": 1251.20,
+      "currency": "nok",
+      "what": "reimbursement cost of driving",
+      "split": {
+        "Maria Eide": 1,
+        "Alexandru Carbuneanu": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "DG",
+      "amount": 1220.0,
+      "currency": "nok",
+      "what": "missing Fjøset fuel paid by Mathias Salomonsen",
+      "split": {
+        "Fredrik Hiorth": 1,
+        "Norunn Hornset": 1,
+        "Jonas Brunsvik": 1,
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Axel Grøvdal": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    },
+    {
+      "by": "Kupla",
+      "amount": 100.91,
+      "currency": "nok",
+      "what": "internal balancing",
+      "split": {
+        "Fredrik Hiorth": 1,
+        "Norunn Hornset": 1,
+        "Jonas Brunsvik": 1,
+        "Maria Eide": 1,
+        "Ole Helgedagsrud": 1,
+        "Alexandru Carbuneanu": 1,
+        "Axel Grøvdal": 1,
+        "Christine Høyem": 1,
+        "Eirik Lygresten": 1,
+        "Håkon Kindem": 1,
+        "Ine Tønnessen": 1,
+        "Inez Aase": 1,
+        "Kristine Nicolaisen": 1,
+        "Mare Nyvoll": 1,
+        "Markus Lagesen": 1,
+        "Martin Rønning": 1,
+        "Zule Zubčić": 1,
+        "Pau Pardo": 1,
+        "Terese Borøy": 1,
+        "Thea Skylstad": 1
+      }
+    }
+  ]
+}

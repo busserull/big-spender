@@ -45,7 +45,7 @@ impl ExpenseReport {
 
             assert_ne!(
                 parent_index, child_index,
-                "'{}' is be in care of itself",
+                "'{}' is in care of itself",
                 child
             );
 
