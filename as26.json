@@ -1,0 +1,267 @@
+{
+  "currency": "nok",
+  "exchange_rates": {},
+  "participants": [
+    "DG",
+    "Alex",
+    "Axel",
+    "Jonas",
+    "Kolbjørn",
+    "Maya",
+    "Mare",
+    "Artur",
+    "Tabea",
+    "Dmitri",
+    "Stian",
+    "Magnus",
+    "Norun"
+  ],
+  "in_care_of": {},
+  "transfers": [
+    {
+      "from": "DG",
+      "to": "Kolbjørn",
+      "amount": 180.00,
+      "currency": "nok",
+      "what": "gear"
+    }
+  ],
+  "expenses": [
+    {
+      "by": "Kolbjørn",
+      "amount": 9955.76,
+      "currency": "nok",
+      "what": "food",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Kolbjørn",
+      "amount": 763.02,
+      "currency": "nok",
+      "what": "fuel for rental",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Kolbjørn",
+      "amount": 492.00,
+      "currency": "nok",
+      "what": "ice creams and milkshakes",
+      "split": {
+        "Alex": 65,
+        "Axel": 60,
+        "Jonas": 59,
+        "Kolbjørn": 55,
+        "Tabea": 59,
+        "Dmitri": 64,
+        "Stian": 65,
+        "Magnus": 65
+      }
+    },
+    {
+      "by": "Jonas",
+      "amount": 932.96,
+      "currency": "nok",
+      "what": "fuel for rental",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Jonas",
+      "amount": 684.30,
+      "currency": "nok",
+      "what": "fuel for Fjøset",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Jonas",
+      "amount": 273.16,
+      "currency": "nok",
+      "what": "fuel for Fjøset",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Jonas",
+      "amount": 109.00,
+      "currency": "nok",
+      "what": "gravel for boat parking",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Jonas",
+      "amount": 109.00,
+      "currency": "nok",
+      "what": "gravel for boat parking",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Axel",
+      "amount": 400.00,
+      "currency": "nok",
+      "what": "access to boat ramp",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Jonas",
+      "amount": 3460.60,
+      "currency": "nok",
+      "what": "estimated cost of driving",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Dmitri",
+      "amount": 3051.50,
+      "currency": "nok",
+      "what": "estimated cost of driving",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Axel",
+      "amount": 3051.50,
+      "currency": "nok",
+      "what": "estimated cost of driving",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    }
+  ]
+}
