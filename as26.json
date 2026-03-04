@@ -69,6 +69,26 @@
     },
     {
       "by": "Kolbjørn",
+      "amount": 4094.00,
+      "currency": "nok",
+      "what": "rental car",
+      "split": {
+        "Alex": 1,
+        "Axel": 1,
+        "Jonas": 1,
+        "Kolbjørn": 1,
+        "Maya": 1,
+        "Mare": 1,
+        "Artur": 1,
+        "Tabea": 1,
+        "Dmitri": 1,
+        "Stian": 1,
+        "Magnus": 1,
+        "Norun": 1
+      }
+    },
+    {
+      "by": "Kolbjørn",
       "amount": 492.00,
       "currency": "nok",
       "what": "ice creams and milkshakes",
